@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg {
+  background:  #232d3f;
+}
+.font{
+    font-family: 'DM Sans', sans-serif;
+}
+.super-text{
+    background: var(--Gradient-Heading, linear-gradient(90deg, #FF6B6B 0%, #FFE66D 50%, #6BFFB8 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+    
+    
+    
+}
+
+.tech-dev{
+    background: linear-gradient(135deg, #4c8df5, #6ab04c);
+    background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
