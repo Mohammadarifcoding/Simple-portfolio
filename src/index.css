@@ -79,7 +79,7 @@ background-clip: text;
   }
 
   .banner-text {
-    display: inline-block;
+
     margin: 0 0.5rem;
   
     animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
