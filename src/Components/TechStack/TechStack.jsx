@@ -13,7 +13,7 @@ const TechStack = () => {
       </p>
 
       <div className="mt-5">
-        <h2 className="lg:text-[38px] text-start  text-white banner-text sm:text-[28px] text-[24px] font-bold mb-8">
+        <h2 className="lg:text-[32px] text-start  text-white banner-text sm:text-[28px] text-[24px] font-bold mb-8">
           Expert
         </h2>
         <div className="flex flex-wrap gap-3 mb-20 md:justify-start justify-center items-center mt-7">
@@ -39,7 +39,7 @@ const TechStack = () => {
         </div>
       </div>
       <div className="mt-5">
-        <h2 className="lg:text-[38px] text-end  text-white banner-text sm:text-[28px] text-[24px] font-bold mb-8">
+        <h2 className="lg:text-[32px] text-end  text-white banner-text sm:text-[28px] text-[24px] font-bold mb-8">
           Familiar
         </h2>
         <div className="flex flex-wrap gap-3 md:justify-end justify-center items-center mt-7">
@@ -66,7 +66,7 @@ const TechStack = () => {
         </div>
       </div>
       <div className="mt-5">
-        <h2 className="lg:text-[38px] text-start  text-white banner-text sm:text-[28px] text-[24px] font-bold mb-8">
+        <h2 className="lg:text-[32px] text-start  text-white banner-text sm:text-[28px] text-[24px] font-bold mb-8">
           Tools
         </h2>
         <div className="flex flex-wrap gap-3 md:justify-start justify-center items-center mt-7">
