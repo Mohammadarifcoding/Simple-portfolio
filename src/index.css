@@ -21,8 +21,75 @@ background-clip: text;
 }
 
 .tech-dev{
-    background: linear-gradient(135deg, #4c8df5, #6ab04c);
+    background: linear-gradient(135deg, #aad4ff, #baf7a9);
     background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.btn-resume {
+
+
+    background: #2563EB;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+   }
+   
+   .btn-resume:hover {
+    color: white;
+   }
+   
+   .btn-resume:after {
+    content: "";
+    background: #232D3F;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+   }
+   
+   .btn-resume:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+   }
+
+   .my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  .fronted {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: zoomInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+
+  .banner-text {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: slideInLeft; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+  .banner-img {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: flash; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }

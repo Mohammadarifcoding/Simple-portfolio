@@ -1,41 +1,48 @@
-import React, { useEffect, useState } from 'react';
-import { Typewriter } from 'react-simple-typewriter';
+import React, { useEffect, useState } from "react";
+import { Typewriter } from "react-simple-typewriter";
+import 'animate.css';
 
 const Banner = () => {
-
-  const job = ['Frontend Developer', 'MERN Developer'];
+  const job = ["Frontend Developer />", "Web Developer />", "Fronted Engineer />"];
 
   const jobColors = {
-    'Frontend Developer': '#4c8df5',
-    'MERN Developer': '#6ab04c',
+    "Frontend Developer": "#4c8df5",
+    "MERN Developer": "#6ab04c",
   };
- 
+
   return (
     <div className="flex flex-col lg:flex-row max-w-[1200px] mx-auto py-20 text-white">
-      <div className="lg:w-[60%] lg:order-1 order-2">
-        <div className="px-10 lg:text-[48px] sm:text-[35px] text-[28px] font-bold mb-8">
-          <h2>
-            Hi 👋, <br /> My name is <br />
-            <span className="super-text font-bold">
-              <Typewriter words={['Mohammad Arif']} loop={1} cursor   />
-            </span>
-            <p className="  ">
-              I am a{' '}
-              <span className="font-bold tech-dev">
-                <Typewriter words={job} loop={2} cursor cursorColor={jobColors[job]} />
+    <div className="lg:w-[65%] lg:order-1 order-2 px-10 flex flex-col">
+      <div className="lg:text-[48px] banner-text sm:text-[35px] text-[28px] font-bold mb-8">
+        <h2>
+         {'<'} Hi 👋, <br /> My name is <br />
+          <span className="super-text font-bold my-element ">Mohammad Arif</span>
+          <p className="  ">
+            I am a{' '}
+            <span className="font-bold tech-dev ">
+                <Typewriter words={job} loop={20} cursor cursorColor={jobColors[job]} /> 
               </span>
-            </p>
-          </h2>
+          </p>
+          
+        </h2>
+      </div>
+      <div className="fronted mt-2">
+          <a
+            href="/Demo_Resume.pdf" // Replace with your resume file path or URL
+            download="Mohamma_Arif_Resume.pdf" // Specify the file name when downloaded
+            className="btn-resume bg-blue-600 border-blue-600 border-2 hover:bg-[#232D3F] rounded-3xl  text-white font-bold lg:py-3 py-2 lg:px-6 px-4 md:text-base text-sm lg:text-lg focus:outline-none focus:shadow-outline inline-block"
+            style={{ textDecoration: 'none' }}
+          >
+           {'<'} Download Resume {'/>'}
+          </a>
         </div>
-        <p className="text-[#a7a7a7] lg:text-lg px-10">
-          Crafting seamless digital experiences through code, a frontend developer merges creativity with technical finesse to bring designs to life. Leveraging languages like HTML, CSS, and JavaScript, they sculpt user-friendly interfaces that captivate and engage.
-        </p>
-      </div>
-
-      <div className="lg:w-[40%] lg:order-2 order-1 w-[300px] flex justify-center mx-auto items-center">
-        <img className="rounded-full lg:w-3/6" src="/githubeditme.png" alt="" />
-      </div>
     </div>
+
+    <div className="lg:w-[35%]  hidden rounded-fulll lg:order-2 order-1    lg:flex justify-center mx-auto items-center relative">
+  <img className=" rounded-full shadow-xl max-w-[250px] shadow-blue-500 lg:w-3/6 banner-img " src="/githubeditme.png" alt=""  />
+</div>
+
+  </div>
   );
 };
 
