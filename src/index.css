@@ -93,3 +93,52 @@ background-clip: text;
     animation: flash; /* referring directly to the animation's @keyframe declaration */
     animation-duration: 1s; /* don't forget to set a duration! */
   }
+
+  /* Define the animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Apply the animation on hover */
+.bouce-tech:hover {
+  animation: bounce 1s ease infinite;
+}
+
+
+.Contact-button {
+  border-radius: 9px;
+  background: var(--gradient-dark-gradient, linear-gradient(180deg, #1A1A1A 0%, #131313 100%));
+  /* Dark/Button Shadow */
+  box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 4px 0px rgba(255, 255, 255, 0.08) inset, 0px 1px 2px 0px rgba(255, 255, 255, 0.02) inset;
+  /* Transition for smooth hover effect */
+  transition: transform 0.1s ease-in-out;
+}
+
+.Contact-button:hover {
+  /* Scale effect on hover */
+  transform: scale(1.08);
+}
+
+/* Create custom animation */
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Apply animation to the scrolling section */
+.animate-scroll {
+  animation: scrollAnimation 1s ease-in-out;
+}

@@ -11,7 +11,7 @@ const Banner = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row max-w-[1200px] mx-auto py-20 text-white">
+    <div id="home" className="flex flex-col lg:flex-row max-w-[1200px] mx-auto py-20 text-white">
     <div className="lg:w-[65%] lg:order-1 order-2 px-10 flex flex-col">
       <div className="lg:text-[48px] text-white banner-text sm:text-[35px] text-[28px] font-bold mb-8">
         <h2>
@@ -39,7 +39,7 @@ const Banner = () => {
     </div>
 
     <div className="lg:w-[35%]  hidden rounded-fulll lg:order-2 order-1    lg:flex justify-center mx-auto items-center relative">
-  <img className=" rounded-full shadow-xl max-w-[250px] shadow-blue-500 border-[2px] border-black lg:w-3/6 banner-img " src="/githubeditme.png" alt=""  />
+  <img className=" rounded-full shadow-xl max-w-[250px]  lg:w-3/6 banner-img " src="/githubeditme.png" alt=""  />
 </div>
 
   </div>

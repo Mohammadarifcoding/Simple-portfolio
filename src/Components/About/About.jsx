@@ -8,7 +8,7 @@ const About = () => {
     
   
   return (
-    <div className="max-w-[1200px] lg:mt-1 pt-10 pb-24 mt-12 px-10 mx-auto text-white">
+    <div id="whoIam" className="max-w-[1200px] animate-scroll lg:mt-1 pt-10 pb-24 mt-12 px-10 mx-auto text-white">
       <h2 className="lg:text-[48px] text-start  text-white banner-text sm:text-[35px] text-[32px] font-bold mb-8">
         A Little Bit About Me
       </h2>

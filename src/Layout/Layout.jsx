@@ -3,6 +3,7 @@ import Banner from '../Components/Banner/Banner';
 import Navbar from '../Components/Navbar/Navbar';
 import { Outlet } from 'react-router-dom';
 import ParticlesValue from '../Components/Particles/Particles';
+import Footer from '../Components/Footer/Footer';
 
 
 const Layout = () => {
@@ -13,6 +14,7 @@ const Layout = () => {
        
             <Navbar></Navbar>
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
         
         

@@ -5,6 +5,7 @@ import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 import { CgMenuGridO, CgProfile } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
+import { Link as ScrollLink } from 'react-scroll';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,45 +20,201 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link to="/projects" className="text-[#ffffff] hover:text-[#a7a7a7]">
-          Projects
-        </Link>
-      </li>
+  <ScrollLink
+    to="AboutMe"
+    smooth={true}
+    duration={1000}
+    className="text-[#ffffff] hover:text-[#a7a7a7] cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('AboutMe');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    About Me
+  </ScrollLink>
+</li>
       <li>
-        <Link to="/technology" className="text-[#ffffff] hover:text-[#a7a7a7]">
-          Technology
-        </Link>
-      </li>
+  <ScrollLink
+    to="skills"
+    smooth={true}
+    duration={1000}
+    className="text-[#ffffff] hover:text-[#a7a7a7] cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('skills');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    Skills
+  </ScrollLink>
+</li>
       <li>
-        <Link to="/contact" className="text-[#ffffff] hover:text-[#a7a7a7]">
-          Contact
-        </Link>
-      </li>
+  <ScrollLink
+    to="contact"
+    smooth={true}
+    duration={1000}
+    className="text-[#ffffff] hover:text-[#a7a7a7] cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    Contact
+  </ScrollLink>
+</li>
+
+
+      <li>
+  <ScrollLink
+    to="projects"
+    smooth={true}
+    duration={1000}
+    className="text-[#ffffff] hover:text-[#a7a7a7] cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('projects');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    Projects
+  </ScrollLink>
+</li>
     </>
   );
 
   const linktwo = (
     <>
+       <li>
+  <ScrollLink
+    to="home"
+    smooth={true}
+    duration={1000}
+    className="text-xl mb-2 text-left text-[#666] hover:text-gray-800 cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('home');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    Home
+  </ScrollLink>
+</li>
       <li>
-        <Link to="/" className="text-xl mb-2 text-left text-[#666] hover:text-gray-800">
-          Home
-        </Link>
-      </li>
+  <ScrollLink
+    to="AboutMe"
+    smooth={true}
+    duration={1000}
+    className="text-xl mb-2 text-left text-[#666] hover:text-gray-800 cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('AboutMe');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    About Me
+  </ScrollLink>
+</li>
       <li>
-        <Link to="/projects" className="text-xl mb-2 text-left text-[#666] hover:text-gray-800">
-          Projects
-        </Link>
-      </li>
+  <ScrollLink
+    to="skills"
+    smooth={true}
+    duration={1000}
+    className="text-xl mb-2 text-left text-[#666] hover:text-gray-800 cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('skills');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    Skills
+  </ScrollLink>
+</li>
       <li>
-        <Link to="/technology" className="text-xl mb-2 text-left text-[#666] hover:text-gray-800">
-          Technology
-        </Link>
-      </li>
-      <li>
-        <Link to="/contact" className="text-xl mb-2 text-left text-[#666] hover:text-gray-800">
-          Contact
-        </Link>
-      </li>
+  <ScrollLink
+    to="contact"
+    smooth={true}
+    duration={1000}
+    className="text-xl mb-2 text-left text-[#666] hover:text-gray-800 cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    Contact
+  </ScrollLink>
+</li>
+<li>
+  <ScrollLink
+    to="projects"
+    smooth={true}
+    duration={1000}
+    className="text-xl mb-2 text-left text-[#666] hover:text-gray-800 cursor-pointer"
+    onClick={(e) => {
+      e.preventDefault(); // Prevents default behavior of anchor tag
+      setTimeout(() => {
+        const contactSection = document.getElementById('projects');
+        if (contactSection) {
+          contactSection.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }, 500); // Change the delay time (in milliseconds) as needed
+    }}
+  >
+    Projects
+  </ScrollLink>
+</li>
     </>
   );
 
